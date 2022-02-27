@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  padding-top: 7em;
+  position: relative;
+  right: 30%;
+}
+@media screen and (max-width: 1150px) {
+  .attribution {
+    position: relative;
+    left: 0%;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 1150px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.btn {
+  padding: 1.1em 4em 1.1em 4em;
+  border-radius: 2em;
+  border: none;
+  font-size: 1em;
+  color: var(--Violet);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: var(--Soft-White);
+}
+@media screen and (max-width: 1150px) {
+  .btn {
+    padding: 1.1em 6.5em 1.1em 6.5em;
+    position: relative;
+    right: 20%;
+    font-size: 0.7em;
+  }
+}
+
+.wrapper {
+  display: flex;
+}
+@media screen and (max-width: 1150px) {
+  .wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.wrapper .main-content .logo {
+  margin: 3em 0 0 4em;
+  width: 12em;
+}
+@media screen and (max-width: 1150px) {
+  .wrapper .main-content .logo {
+    width: 25%;
+    margin: 2em 0 0 0;
+    position: absolute;
+  }
+}
+.wrapper .main-content .mockups {
+  margin: 4em 0 0 4.7em;
+  width: 43.3em;
+  height: auto;
+}
+@media screen and (max-width: 1150px) {
+  .wrapper .main-content .mockups {
+    padding-top: 3em;
+    width: 80%;
+    position: relative;
+    right: 6.5%;
+  }
+}
+.wrapper .sub-content {
+  width: 100%;
+  margin: 12.5em 0 0 7.5em;
+  color: var(--Soft-White);
+}
+@media screen and (max-width: 1150px) {
+  .wrapper .sub-content {
+    margin: 3em 0 0 0;
+    position: relative;
+    left: 20%;
+  }
+}
+.wrapper .sub-content .header-title {
+  max-width: 70%;
+  margin-bottom: 0.5em;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 1150px) {
+  .wrapper .sub-content .header-title {
+    font-size: 1.5em;
+    max-width: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.wrapper .sub-content .header-sub-title {
+  margin-bottom: 1.5em;
+  max-width: 85%;
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (max-width: 1150px) {
+  .wrapper .sub-content .header-sub-title {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    max-width: 60%;
+  }
+}
+
+.socials {
+  margin-right: 3em;
+  word-spacing: 0.5em;
+}
+@media screen and (max-width: 1150px) {
+  .socials {
+    width: 100%;
+    margin-top: 5em;
+    text-align: center;
+  }
+}
+.socials button {
+  border: 1px solid var(--Soft-White);
+  border-radius: 50%;
+  color: var(--Soft-White);
+  background-color: transparent;
+  cursor: pointer;
+}
+.socials button:hover {
+  border: 1px solid var(--Soft-Magenta);
+}
+.socials button:nth-child(1) {
+  padding: 0.6em 1em;
+}
+.socials button:nth-child(1):hover {
+  color: var(--Soft-Magenta);
+}
+.socials button:nth-child(2) {
+  padding: 0.6em 0.7em;
+}
+.socials button:nth-child(2):hover {
+  color: var(--Soft-Magenta);
+}
+.socials button:nth-child(3) {
+  padding: 0.6em 0.7em;
+}
+.socials button:nth-child(3):hover {
+  color: var(--Soft-Magenta);
+}
+.socials button i {
+  justify-content: flex-end;
+  font-size: 1.3em;
+}
+
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-color: var(--Violet);
+  background-size: 1270px;
+  background-position: 0px -20px;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 1150px) {
+  body {
+    background-size: contain;
+    background-image: url(../images/bg-mobile.svg);
+  }
+}
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+  --Soft-White: hsl(300deg 100% 100%);
+}
+
+/*# sourceMappingURL=styles.css.map */

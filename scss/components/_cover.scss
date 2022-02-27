@@ -1,0 +1,14 @@
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-color: var(--Violet);
+  background-size: 1270px;
+  background-position: 0px -20px;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: 1150px) {
+    background-size: contain;
+    background-image: url(../images/bg-mobile.svg);
+  }
+}

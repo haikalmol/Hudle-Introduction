@@ -1,0 +1,22 @@
+.btn {
+  padding: 1.1em 4em 1.1em 4em;
+  border-radius: 2em;
+  border: none;
+  font-size: 1em;
+  color: var(--Violet);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--Soft-Magenta);
+    color: var(--Soft-White);
+  }
+
+  @media screen and (max-width: 1150px) {
+    padding: 1.1em 6.5em 1.1em 6.5em;
+    position: relative;
+    right: 20%;
+    font-size: 0.7em;
+  }
+}

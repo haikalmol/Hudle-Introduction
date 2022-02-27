@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  padding-top: 7em;
+  position: relative;
+  right: 30%;
+
+  @media screen and (max-width: 1150px) {
+    position: relative;
+    left: 0%;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media screen and (max-width: 1150px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

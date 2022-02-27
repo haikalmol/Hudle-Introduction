@@ -1,0 +1,128 @@
+.wrapper {
+  display: flex;
+
+  @media screen and (max-width: 1150px) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .main-content {
+    .logo {
+      margin: 3em 0 0 4em;
+      width: 12em;
+
+      @media screen and (max-width: 1150px) {
+        width: 25%;
+        margin: 2em 0 0 0;
+        position: absolute;
+      }
+    }
+
+    .mockups {
+      margin: 4em 0 0 4.7em;
+      width: 43.3em;
+      height: auto;
+
+      @media screen and (max-width: 1150px) {
+        padding-top: 3em;
+        width: 80%;
+        position: relative;
+        right: 6.5%;
+      }
+    }
+  }
+
+  .sub-content {
+    width: 100%;
+    margin: 12.5em 0 0 7.5em;
+    color: var(--Soft-White);
+
+    @media screen and (max-width: 1150px) {
+      margin: 3em 0 0 0;
+      position: relative;
+      left: 20%;
+    }
+
+    .header-title {
+      max-width: 70%;
+      margin-bottom: 0.5em;
+      font-family: "Poppins", sans-serif;
+
+      @media screen and (max-width: 1150px) {
+        font-size: 1.5em;
+        max-width: 60%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .header-sub-title {
+      margin-bottom: 1.5em;
+      max-width: 85%;
+      font-family: "Open Sans", sans-serif;
+
+      @media screen and (max-width: 1150px) {
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+.socials {
+  margin-right: 3em;
+  word-spacing: 0.5em;
+
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+    margin-top: 5em;
+    text-align: center;
+  }
+
+  button {
+    border: 1px solid var(--Soft-White);
+    border-radius: 50%;
+    color: var(--Soft-White);
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid var(--Soft-Magenta);
+    }
+
+    &:nth-child(1) {
+      padding: 0.6em 1em;
+
+      &:hover {
+        color: var(--Soft-Magenta);
+      }
+    }
+
+    &:nth-child(2) {
+      padding: 0.6em 0.7em;
+
+      &:hover {
+        color: var(--Soft-Magenta);
+      }
+    }
+
+    &:nth-child(3) {
+      padding: 0.6em 0.7em;
+
+      &:hover {
+        color: var(--Soft-Magenta);
+      }
+    }
+
+    i {
+      justify-content: flex-end;
+      font-size: 1.3em;
+    }
+  }
+}
